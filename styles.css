@@ -33,17 +33,22 @@
     font-weight: 600;
   }
   #titolo{
-    margin-left: 42%;
+    text-align: center;
   }
   #img_socket{
     width: 70%;
   }
  #MM{
-  position:fixed;
   bottom:0;
   width: 100%;
  }
  #testo_footer{
   text-align: center;
   
+ }
+ #immagineosi{
+  width: 100%;
+ }
+ #immaginedispositivo{
+  width: 95%;
  }
