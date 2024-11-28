@@ -54,12 +54,15 @@
 
 }
 
-#immagineosi {
-  width: 100%;
+#theme:focus {
+  outline: 0px solid #555; 
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
-#immaginedispositivo {
-  width: 95%;
+
+#immaginedispositivo, #immagineosi {
+  width: 45%;
+  margin-left: 15%;
 }
 
 #bandaSpazio {
@@ -70,9 +73,32 @@
   background-color: #2c3e50;
   color: white;
 
+  display: grid;
+  place-items: center;  /* Centra il contenuto sia orizzontalmente che verticalmente */
+
 }
 
 #bottoneSpeciale:hover {
   color: #f39c12;
   /* Cambia il colore del testo quando il mouse passa sopra */
+}
+#logo{
+  width: 7%;
+}
+#theme{
+  background-color: #2c3e50;
+  color: white;
+}
+#theme_inside{
+  background-color: #68a7e7;
+}
+#theme:hover{
+  color: #f39c12;
+}
+#ImmagineCard{
+  width: 50%;
+  margin-left: 25%;
+}
+#text_home{
+  font-size: 140%;
 }
