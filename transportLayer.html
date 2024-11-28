@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IL TRANSPORT LAYER</title>
+     <!-- Link al file CSS personalizzato -->
+     <link href="styles.css" rel="stylesheet">
+     <!-- Link a Bootstrap 5 CSS tramite CDN ufficiale -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="=container-fluid">
+        <div class="row">
+            <div class="col" id="textbox">
+                <h2 id="titolo">IL TCP</h2>
+                TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono due protocolli di trasporto
+                fondamentali
+                nel modello OSI, che operano al livello 4 (trasporto). Entrambi vengono utilizzati per inviare dati su
+                una rete,
+                ma differiscono in modo significativo nella gestione della comunicazione, della sicurezza e
+                dell'affidabilità.
+                <br>
+                TCP (Transmission Control Protocol) è un protocollo orientato alla connessione, il che significa che
+                stabilisce
+                una connessione affidabile tra il mittente e il destinatario prima di iniziare a trasmettere i dati.
+                Questo
+                protocollo garantisce che i dati arrivino correttamente e nell'ordine giusto, utilizzando diversi
+                meccanismi di
+                controllo.
+                <br>
+                Caratteristiche principali di TCP:
+                <br>
+                Affidabilità: TCP è progettato per garantire che i dati vengano ricevuti senza errori. Se un pacchetto
+                viene
+                perso o corrotto, TCP lo ritrasmette.
+                <br>
+                Controllo del flusso: TCP gestisce la quantità di dati che un mittente può inviare prima di ricevere una
+                conferma dal destinatario, prevenendo il sovraccarico della rete o del dispositivo di ricezione.
+                Controllo della congestione: TCP rileva quando la rete è congestionata e riduce la velocità di invio per
+                evitare
+                il sovraccarico.
+                <br>
+                Ritrasmissione e numerazione: TCP numererà i pacchetti e li riorganizzerà correttamente se arrivano
+                fuori
+                ordine.
+                <br>
+                Connessione orientata: Prima che TCP trasmetta dati, stabilisce una connessione tra il mittente e il
+                destinatario attraverso un processo chiamato "handshake" (stretta di mano). Durante l'handshake, i due
+                dispositivi concordano su parametri come numeri di sequenza e dimensioni del buffer.
+                TCP è utilizzato in applicazioni che richiedono affidabilità, come il trasferimento di file (FTP), la
+                navigazione web (HTTP/HTTPS), l'email (SMTP) e altre comunicazioni dove l'integrità dei dati è cruciale.
+            </div>
+
+            <div class="col" id="textbox">
+                <h2 id="titolo"> L'UDP</h2>
+                UDP (User Datagram Protocol) è un protocollo non orientato alla connessione, il che significa che invia
+                i datisenza stabilire una connessione preventiva tra mittente e destinatario. UDP non garantisce l'affidabilità del
+                trasferimento, e i pacchetti possono arrivare fuori ordine, essere persi o duplicati senza che il protocollo intervenga.
+                <br>
+                Caratteristiche principali di UDP:
+                <br>
+                Velocità: Poiché UDP non include i meccanismi di controllo e di conferma presenti in TCP, è generalmente
+                più
+                veloce e più leggero, particolarmente utile per applicazioni che richiedono bassa latenza.
+                Senza connessione: UDP non stabilisce una connessione tra mittente e destinatario, riducendo il
+                sovraccarico
+                di
+                comunicazione.
+                <br>
+                Affidabilità assente: Non c'è garanzia che i dati vengano ricevuti o che arrivino nell'ordine corretto.
+                Se
+                l'affidabilità è necessaria, è responsabilità dell'applicazione implementare meccanismi di controllo.
+                Uso in tempo reale: UDP è comunemente utilizzato in applicazioni che richiedono trasmissioni in tempo
+                reale,
+                come streaming video, giochi online e VoIP (Voice over IP), dove la velocità è più importante
+                dell'affidabilità
+                completa.
+                <br>
+                UDP è utilizzato in situazioni dove la velocità e l'efficienza sono più importanti dell'affidabilità
+                assoluta,
+                come nel caso delle comunicazioni in tempo reale o in applicazioni che tollerano la perdita di alcuni
+                pacchetti
+                di dati senza impatti significativi sul risultato finale.
+            </div>
+
+        </div>
+
+    </div>
+    <script src="functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
